@@ -12,24 +12,41 @@
 
 
 body{
+	display: flex;
+	align-items: center;
+	height: 100vh;
+
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+	/*background-color: rgba(0,100,0,0.4);*/
 
 }
 
 .container{
 	display: flex;
+	width: 200vw;
+	margin: auto;
+	
 
-	padding-left: 25vw;
-
-	overflow-x: visible;
+	
+	/*background-color: rgba(100,0,0,0.4);*/
 }
 
 .tile {
-
-	/*display: inline-block;*/
 	flex-shrink: 0;
 
 	width: 25vw;
 	height: 50vh;
 
+	margin: 0 2em;
+}
+
+.style0 {
+	border:none;
+}
+
+.style1 {
 	border: 1px solid black;
 }
+
