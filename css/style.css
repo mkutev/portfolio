@@ -7,8 +7,6 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	transition: height 0.3s ease-out;
-
-	overflow-y: hidden;
 }
 
 
@@ -24,7 +22,7 @@ body{
 	display: flex;
 	align-items: center;
 	margin: auto;
-	width: 200vw;
+	padding: 0 10vw;
 	height: var(--inner-height);
 	/*background-color: rgba(100,0,0,0.4);*/
 }
