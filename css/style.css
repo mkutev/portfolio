@@ -26,18 +26,15 @@ body{
 	display: flex;
 	align-items: center;
 	margin: auto;
-	padding: 0 10vw;
+	padding: 0 2vw;
 	height: var(--inner-height);
 	/*background-color: rgba(100,0,0,0.4);*/
 }
 
 .tile {
 	flex-shrink: 0;
-
-	/*width: 80vw;*/
 	height: 75vh;
-
-	margin: 0 2em;
+	margin: 0 2vw;
 }
 
 .style0 {
@@ -57,7 +54,7 @@ body{
 }
 
 .lg {
-	width: 75vh;
+	width: 93vw;
 }
 
 .style1 {
