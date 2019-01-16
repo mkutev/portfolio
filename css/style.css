@@ -7,43 +7,55 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	transition: height 0.3s ease-out;
+
+	overflow-y: hidden;
 }
 
 
 
 body{
 	display: flex;
-	align-items: center;
-	height: 100vh;
-
+	/*height: 100vh;*/	
 	overflow-x: scroll;
 	overflow-y: hidden;
-
-	/*background-color: rgba(0,100,0,0.4);*/
-
 }
 
 .container{
 	display: flex;
-	width: 200vw;
+	align-items: center;
 	margin: auto;
-	
-
-	
+	width: 200vw;
+	height: var(--inner-height);
 	/*background-color: rgba(100,0,0,0.4);*/
 }
 
 .tile {
 	flex-shrink: 0;
 
-	width: 25vw;
-	height: 50vh;
+	/*width: 80vw;*/
+	height: 75vh;
 
 	margin: 0 2em;
 }
 
 .style0 {
 	border:none;
+}
+
+.xs{
+	width:15vw;
+}
+
+.s {
+	width: 25vw;
+}
+
+.m { 
+	width: 50vw 
+}
+
+.lg {
+	width: 80vw;
 }
 
 .style1 {
