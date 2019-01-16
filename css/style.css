@@ -12,12 +12,15 @@
 
 html{
 	overflow-y: hidden;
+	height: 100vh;
 }
 
 
 
 body{
 	display: flex;
+
+	height: 100%;
 	/*height: 100vh;*/	
 	overflow-x: scroll;
 }
@@ -33,12 +36,30 @@ body{
 
 .tile {
 	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
 	height: 75vh;
 	margin: 0 2vw;
+
+	padding: 2em;
 }
 
 .style0 {
 	border:none;
+}
+
+.style1 {
+	border: 1px solid black;
+	max-width: 75vh;
+}
+
+
+#intro { 
+	background-image: url("../img/roof.jpg");
+	background-size: 100% auto	;
+	background-repeat: no-repeat;
 }
 
 .xs{
@@ -57,7 +78,14 @@ body{
 	width: 93vw;
 }
 
-.style1 {
-	border: 1px solid black;
+h1 {
+	font-size: 4em;
+	margin: 2vw 0;
 }
+
+img {
+		width: 30%;
+		height: 30%;
+}
+
 
