@@ -10,12 +10,16 @@
 }
 
 
+html{
+	overflow-y: hidden;
+}
+
+
 
 body{
 	display: flex;
 	/*height: 100vh;*/	
 	overflow-x: scroll;
-	overflow-y: hidden;
 }
 
 .container{
@@ -53,7 +57,7 @@ body{
 }
 
 .lg {
-	width: 80vw;
+	width: 75vh;
 }
 
 .style1 {
