@@ -57,7 +57,7 @@
     	$(".container").height(window.innerHeight);
   	</script> -->	
 
-  	<script type="text/javascript">
+  	<script>
   		$(function() {
 
   			$("body").mousewheel(function(event, delta) {
@@ -65,11 +65,17 @@
     			this.scrollLeft -= (delta * 10);
     
       			event.preventDefault();
-
+      			// console.log($(window).scrollLeft());
    			});
 
 		});
   	</script>
 	
+	<!-- <script type="text/javascript">
+		$(window).scroll(function (event)) {
+    		var scroll = // Do something
+
+		});
+	</script> -->
 
 </html>
