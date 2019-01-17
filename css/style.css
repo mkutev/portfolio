@@ -46,8 +46,10 @@ body{
 
 	padding: 2em;
 
-	animation: rotateY 1s infinite;
-  	animation-timing-function: linear;
+	perspective: 50px;	
+
+	/*animation: rotateY 60s infinite;*/
+  	/*animation-timing-function: linear;*/
 }
 
 
