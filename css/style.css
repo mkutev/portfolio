@@ -52,6 +52,10 @@ body{
   	/*animation-timing-function: linear;*/
 }
 
+.tile :focus{
+	border-color: gray;
+}
+
 
 @-webkit-keyframes rotateY {
   0% {
@@ -113,5 +117,27 @@ img {
 		width: 30%;
 		height: 30%;
 }
+
+
+
+/* Lists */
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+ul li a{
+	font-family: 'League Spartan';
+	font-size: 2vmin;
+	line-height: 200%;
+	text-decoration: none;
+	color: #000;
+}
+
+ul li a:visited{
+	text-decoration: none;
+	color: #000;
+}
+
 
 
