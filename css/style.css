@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Faster+One');
-
+*/
 
 *{
 	font-family: 'Junction', sans-serif;
@@ -39,45 +39,6 @@ body{
 	margin: auto;
 	padding: 0 2vw;
 	height: var(--inner-height);
-	/*background-color: rgba(100,0,0,0.4);*/
-}
-
-.tile {
-	flex-shrink: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-end;
-
-	height: 75vh;
-	margin: 0 2vw;
-
-	padding: 2em;
-
-	perspective: 50px;	
-
-	/*animation: rotateY 60s infinite;*/
-  	/*animation-timing-function: linear;*/
-}
-
-.tile :focus{
-	border-color: gray;
-}
-
-.style0 {
-	border:none;
-}
-
-.style1 {
-	border: 3px solid #000;
-	border-radius: 5px;
-	/*max-width: 75vh;*/
-}
-
-
-#intro { 
-	background-image: url("../img/roof.jpg");
-	background-size: 100% auto	;
-	background-repeat: no-repeat;
 }
 
 .xs{ width:15vw; }
@@ -89,6 +50,52 @@ body{
 .x1 { width: 93vw; max-width: 75vh; }
 
 .x2 { width: 186vw; max-width: 150vh; }
+
+
+.tile {
+	flex-shrink: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	height: 75vh;
+	margin: 0 2vw;
+
+	border: 3px solid #000;
+	border-radius: 5px;
+
+	perspective: 10px;	
+	overflow: hidden;
+}
+
+.style0 {
+	padding: 2em;
+}
+
+.style1 {
+	padding:0;
+}
+
+.style1 .dyna-label {
+	width: 100%;
+	background-color: rgba(0,0,0,1);
+	padding: 0 2em;
+	transition: transform 0.3s ease-in;
+
+	height: auto;
+	transform-origin: bottom;
+	transform:scaleY(0);
+}
+
+.style1:hover .dyna-label{
+	transform: scaleY(1);
+	transition: transform 0.3s ease-in;
+} 
+
+.style1:hover #esdc::after {
+	opacity: 1;
+}
+
 
 h1 {
 	font-family: 'League Spartan';
@@ -103,6 +110,10 @@ h2 {
 	line-height: 100%;
 }
 
+.dyna-label h2{
+	color: #fff;
+}
+
 p {
 	line-height: 140%;
 	font-family: 'League Spartan';
@@ -114,7 +125,6 @@ img {
 		width: 30%;
 		height: 30%;
 }
-
 
 
 /* Lists */
@@ -136,6 +146,12 @@ ul li a:visited{
 	color: #000;
 }
 
+img {
+	width: 100%;
+	height: auto;
+	border-radius: 5px;
+}
+
 
 
 #highline::after {
@@ -145,7 +161,7 @@ ul li a:visited{
 	background-position: center;
 	border-radius: 3px;
 
-	opacity: 0.8;
+	opacity:1;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -161,7 +177,7 @@ ul li a:visited{
 	background-size: cover;
 	background-position: center;
 	border-radius: 3px;
-	opacity: 0.8;
+	opacity: 1;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -176,7 +192,7 @@ ul li a:visited{
 	background-size: cover;
 	background-position: center;
 	border-radius: 3px;
-	opacity: 0.8;
+	opacity: 1;
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -184,5 +200,4 @@ ul li a:visited{
 	position: absolute;
 	z-index: -1;   
 }
-
 

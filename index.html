@@ -7,14 +7,14 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link rel="stylesheet" type="text/css" href="css/normalize.css">
-		<link rel="stylesheet" type="text/css" href="webfonts/junction.css">
+		<!-- <link rel="stylesheet" type="text/css" href="webfonts/junction.css"> -->
 		<link rel="stylesheet" type="text/css" href="webfonts/league-spartan.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 		<script src="jquery/jquery-3.3.1.min.js"></script>
 		<script src="jquery/jquery.mousewheel.min.js"></script>
 
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"> -->
 
 
 	</head>
@@ -27,29 +27,33 @@
 
 
 
-			<div id="home" class="tile x1 style1">
+			<div id="home" class="tile x1 style0">
 				<h1>Hey there.</h1>
 				<!-- <p>Choose what you are looking for or just take a look around.</p> -->
 				<ul>
 					<li><a href="#2">About me</a></li>
-					<li><a href="#higline">Highline Art Gallery</a></li>
-					<li><a href="#esdc">Service Canada Coop</a></li>
-					<li><a href="#dnd">D&D Beyond</a></li>
-					<li><a href="#4">Smaller things</a></li>
-					<li><a href="#5">Get in touch</a></li>
+					<li><a href="#higline">Projects</a></li>
+					<li><a href="#5">Smaller things</a></li>
+					<li><a href="#6">Get in touch</a></li>
 				</ul>
 			</div>
 			
 			<div id="highline" class="tile x1 style1">
-				<h2>Highline Art Gallery</h2>
+				<div class="dyna-label">
+					<h2>Highline Art Gallery</h2>
+				</div>
 			</div>
 			
 			<div id="esdc" class="tile x1 style1">
-				<h2>Service Canada Coop</h2>
+				<div class="dyna-label">
+					<h2>Service Canada Coop</h2>
+				</div>
 			</div>
 
 			<div id="dnd" class="tile x1 style1">
-				<h2>D&D Beyond</h2>
+				<div class="dyna-label">
+					<h2>D&D Beyond</h2>
+				</div>
 			</div>
 			<div id="5" class="tile x1 style1"></div>
 			<div id="6" class="tile x1 style1"></div>
@@ -94,7 +98,7 @@
 
 	  			$("body").mousewheel(function(event, delta) {
 
-	    			this.scrollLeft -= (delta * 10);
+	    			this.scrollLeft -= (delta * 40);
 	    
 	      			event.preventDefault();
 	      			// console.log($(window).scrollLeft());
