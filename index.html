@@ -27,28 +27,67 @@
 
 
 
-			<div id="home" class="tile lg style1">
-				<!-- <img src="img/spinningdisk.gif"> -->
+			<div id="home" class="tile x1 style1">
 				<h1>Hey there.</h1>
 				<!-- <p>Choose what you are looking for or just take a look around.</p> -->
 				<ul>
 					<li><a href="#2">About me</a></li>
-					<li><a href="#3">Main projects</a></li>
+					<li><a href="#higline">Highline Art Gallery</a></li>
+					<li><a href="#esdc">Service Canada Coop</a></li>
+					<li><a href="#dnd">D&D Beyond</a></li>
 					<li><a href="#4">Smaller things</a></li>
 					<li><a href="#5">Get in touch</a></li>
 				</ul>
 			</div>
-			<div id="2" class="tile lg style1">
-				
+			
+			<div id="highline" class="tile x1 style1">
+				<h2>Highline Art Gallery</h2>
 			</div>
-			<div id="3" class="tile lg style1"></div>
+			
+			<div id="esdc" class="tile x1 style1">
+				<h2>Service Canada Coop</h2>
+			</div>
 
-			<div id="4" class="tile lg style1"></div>
-			<div id="5" class="tile lg style1"></div>
-			<div id="6" class="tile lg style1"></div>
+			<div id="dnd" class="tile x1 style1">
+				<h2>D&D Beyond</h2>
+			</div>
+			<div id="5" class="tile x1 style1"></div>
+			<div id="6" class="tile x1 style1"></div>
 
 			
 		</div>
+
+		<script>
+			// jQuery smooth scroll script from https://css-tricks.com/snippets/jquery/smooth-scrolling/
+			$('a[href*="#"]')
+			.not('[href="#"]')
+			.not('[href="#0"]')
+			.click(function(event) {
+			    if (
+			      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+			      && 
+			      location.hostname == this.hostname
+			 	) {
+				    var target = $(this.hash);
+				    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				    if (target.length) {
+				        event.preventDefault();
+				        $('html, body').animate({
+				          scrollLeft: target.offset().left
+				        }, 1000, function() {					        
+					        var $target = $(target);
+					        $target.focus();
+					        if ($target.is(":focus")) { 
+					            return false;
+					        } else {
+					            $target.attr('tabindex','-1'); focusable
+					            $target.focus(); 
+					        };
+				        });
+			        }
+			    }
+			});
+		</script>
 
 		<script>
 	  		$(function() {

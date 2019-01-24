@@ -9,13 +9,14 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	transition: height 0.3s ease-out;
-	color: white;
+	color: #000;
 }
 
 
 html{
 	overflow: hidden;
 	height: 100vh;
+	/*scroll-behavior: smooth;*/
 }
 
 
@@ -29,7 +30,7 @@ body{
 
 	overflow-x: scroll;
 
-	background-color: #000;
+	background-color: #fff;
 }
 
 .container{
@@ -62,24 +63,14 @@ body{
 	border-color: gray;
 }
 
-
-@-webkit-keyframes rotateY {
-  0% {
-    transform: rotateY(0deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
 .style0 {
 	border:none;
 }
 
 .style1 {
-	border: 3px solid #fff;
+	border: 3px solid #000;
 	border-radius: 5px;
-	max-width: 75vh;
+	/*max-width: 75vh;*/
 }
 
 
@@ -89,27 +80,27 @@ body{
 	background-repeat: no-repeat;
 }
 
-.xs{
-	width:15vw;
-}
+.xs{ width:15vw; }
 
-.s {
-	width: 25vw;
-}
+.s { width: 25vw; }
 
-.m { 
-	width: 50vw 
-}
+.m { width: 50vw; }
 
-.lg {
-	width: 93vw;
-}
+.x1 { width: 93vw; max-width: 75vh; }
+
+.x2 { width: 186vw; max-width: 150vh; }
 
 h1 {
 	font-family: 'League Spartan';
 	font-size: 10vmin;
 	line-height: 100%;
 	margin: 1vw 0;
+}
+
+h2 {
+	font-family: 'League Spartan';
+	font-size: 5vmin;
+	line-height: 100%;
 }
 
 p {
@@ -134,16 +125,64 @@ ul {
 
 ul li a{
 	font-family: 'League Spartan';
-	font-size: 2vmin;
+	font-size: 1.5svmax;
 	line-height: 200%;
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
 ul li a:visited{
 	text-decoration: none;
-	color: #fff;
+	color: #000;
 }
 
+
+
+#highline::after {
+	content: "";
+	background: url("../img/233/render5.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+
+#esdc::after {
+	content: "";
+	background: url("https://d2r72yk5wmppdj.cloudfront.net/m/29a02a441b98bc6d/High-ethonomics-06.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
+
+#dnd::after {
+	content: "";
+	background: url("../img/AAA.jpg");
+	background-size: cover;
+	background-position: center;
+	border-radius: 3px;
+	opacity: 0.8;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;   
+}
 
 
