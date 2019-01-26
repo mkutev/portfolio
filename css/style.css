@@ -86,6 +86,7 @@ a {
 	width: 100%;
 	background-color: rgba(0,0,0,1);
 	padding: 1.5em;
+	text-align: 
 	transition: transform 0.6s ease-out;
 
 	height: auto;
@@ -179,7 +180,7 @@ img {
 
 #esdc::after {
 	content: "";
-	background: url("../img/ethonomics.jpg");
+	background: url("../img/ethonomics2.jpg");
 	background-size: cover;
 	background-position: center;
 	border-radius: 3px;
@@ -194,7 +195,7 @@ img {
 
 #dnd::after {
 	content: "";
-	background: url("../img/AAA.jpg");
+	background: url("../img/sutherland.jpg");
 	background-size: cover;
 	background-position: center;
 	border-radius: 3px;
