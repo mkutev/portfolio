@@ -33,6 +33,12 @@ body{
 	background-color: #fff;
 }
 
+a {
+	text-decoration: none;
+	margin: none;
+	padding: none;
+}
+
 .container{
 	display: flex;
 	align-items: center;
@@ -79,8 +85,8 @@ body{
 .style1 .dyna-label {
 	width: 100%;
 	background-color: rgba(0,0,0,1);
-	padding: 0 2em;
-	transition: transform 0.3s ease-in;
+	padding: 1.5em;
+	transition: transform 0.6s ease-out;
 
 	height: auto;
 	transform-origin: bottom;
@@ -89,13 +95,12 @@ body{
 
 .style1:hover .dyna-label{
 	transform: scaleY(1);
-	transition: transform 0.3s ease-in;
+	transition: transform 0.6s ease-out;
 } 
 
 .style1:hover #esdc::after {
 	opacity: 1;
 }
-
 
 h1 {
 	font-family: 'League Spartan';
@@ -106,12 +111,13 @@ h1 {
 
 h2 {
 	font-family: 'League Spartan';
-	font-size: 5vmin;
+	font-size: 4vmin;
 	line-height: 100%;
 }
 
 .dyna-label h2{
 	color: #fff;
+	margin: 0;
 }
 
 p {
@@ -122,8 +128,8 @@ p {
 }
 
 img {
-		width: 30%;
-		height: 30%;
+	width: 30%;
+	height: 30%;
 }
 
 
@@ -173,7 +179,7 @@ img {
 
 #esdc::after {
 	content: "";
-	background: url("https://d2r72yk5wmppdj.cloudfront.net/m/29a02a441b98bc6d/High-ethonomics-06.jpg");
+	background: url("../img/ethonomics.jpg");
 	background-size: cover;
 	background-position: center;
 	border-radius: 3px;
