@@ -40,6 +40,12 @@
 				</ul>
 			</div>
 			
+			<div id="dnd" class="tile x1 style1">
+				<div class="dyna-label">
+					<h2>D&D Beyond</h2>
+				</div>
+			</div>
+
 			<div id="highline" class="tile x1 style1">
 				<div class="dyna-label">
 					<h2>Highline Art Gallery</h2>
@@ -52,11 +58,6 @@
 				</div>
 			</div>
 
-			<div id="dnd" class="tile x1 style1">
-				<div class="dyna-label">
-					<h2>D&D Beyond</h2>
-				</div>
-			</div>
 			<div id="smallerthings" class="tile x1 style1">
 				<div class="dyna-label">
 					<h2>Smaller Things</h2>
@@ -118,41 +119,23 @@
   		</script>
 
   		<script>
-  			// console.log( $(".container").find('style1') );
-
-  		// 	$('body').scroll(funtion() {
-  		// 		$( ".tile" ).each(function( index ) {
-				// 	console.log(index + ": " + $( this ).visible());
-				// 	$( this ).addClass("tile-visible");
-				// });
-  		// 	});
-
-  			// $('.style1').each(function( index ) {
-  			// 	if ($(this).visible()) {
-  			// 		$(this).toggleClass('tile-visible');
-  			// 	}
-  			// })
-  			
-
-  			// $('body').scroll(function() {
-  			// 	$('.style1').each(function( index ) {
-  					
-  			// 		if ($(this).visible() {
-  			// 			$(this).addClass('tile-visible');
-  			// 			console.log(index + ": " + $( this ).visible());
-  			// 		} else {
-  			// 			$(this).removeClass('tile-visible');
-  			// 		}
-  			// 	})
-  			// });
-
-
-  			$('body').scroll(function() {
-  				if ($('#esdc').visible()){
-  					$('#esdc').addClass('tile-visible');
-  				} else {
-  					$('#esdc').removeClass('tile-visible');
+  			$('.style1').each(function( index ) {
+  				if ($(this).visible()) {
+  					$(this).addClass('tile-visible');
   				}
+  			})
+  			
+  			$('body').scroll(function() {
+  				$('.style1').each(function( index ) {
+  					
+  					if ($(this).visible()) {
+
+  						$(this).addClass('tile-visible');
+  						// console.log(index + ": " + $( this ).visible());
+  					} else {
+  						$(this).removeClass('tile-visible');
+  					}
+  				})
   			});
   		</script>
 
