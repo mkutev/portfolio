@@ -117,7 +117,7 @@ a {
 	position:absolute;
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-items: flex-end;
 	bottom: -2px;
 	float: left;
 	background-color: rgba(0,0,0,1);
@@ -168,6 +168,7 @@ h2 {
 	padding: 15px 20px 10px 20px;
 	line-height: 1;
 	transition: all 0.6s ease-out;
+	margin-left: 2em;
 }
 
 .dyna-label a:hover {
