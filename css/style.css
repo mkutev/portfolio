@@ -10,12 +10,14 @@
 	box-sizing: border-box;
 	transition: height 0.3s ease-out;
 	color: #000;
+	border-radius: 7px;
 }
 
 
 html{
 	overflow: hidden;
 	height: 100vh;
+
 	/*scroll-behavior: smooth;*/
 }
 
@@ -90,7 +92,6 @@ a {
 	margin: 0 2vw;
 
 	border: 3px solid #000;
-	border-radius: 7px;
 
 	perspective: 10px;	
 	overflow: hidden;
@@ -114,7 +115,11 @@ a {
 .style1 .dyna-label {
 	width: 100%;
 	position:absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	bottom: -2px;
+	float: left;
 	background-color: rgba(0,0,0,1);
 	padding: 1.5em;
 	box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.5);
@@ -145,13 +150,32 @@ h2 {
 	font-family: 'League Spartan';
 	font-size: 4vh;
 	line-height: 120%;
+	display: inline-block;
 }
 
 .dyna-label h2{
 	color: #fff;
 	margin: 0;
-	/*position: relative;
-	bottom: -2px;*/
+	position: relative;
+	bottom: -2px;
+}
+
+.dyna-label a{
+	color: white;
+	font-family: 'League Spartan';
+	font-size: 2vh;
+	border: 1px solid white;
+	padding: 15px 20px 10px 20px;
+	line-height: 1;
+	transition: all 0.6s ease-out;
+}
+
+.dyna-label a:hover {
+	color: black;
+	background-color: white;
+	border: 1px solid black;
+	transition: all 0.6s ease-out;
+
 }
 
 p {
@@ -189,7 +213,6 @@ ul li a:visited{
 img {
 	width: 100%;
 	height: auto;
-	border-radius: 5px;
 }
 
 
@@ -214,7 +237,6 @@ img {
 	background: url("../img/ethonomics2.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 3px;
 	opacity: 1;
 	top: 0;
 	left: 0;
@@ -229,7 +251,6 @@ img {
 	background: url("../img/sutherland.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 3px;
 	opacity: 1;
 	top: 0;
 	left: 0;
