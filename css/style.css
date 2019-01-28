@@ -33,6 +33,28 @@ body{
 	background-color: #fff;
 }
 
+#dark {
+	background-color: black;
+}
+
+#dark a, #dark h1, #dark h2 {
+	color: white;
+}
+
+#dark .tile {
+	border: 3px solid #fff;
+	box-shadow: 2px 2px 7px 2px rgba(255, 255, 255, 0.19);
+}
+
+#dark .style1 .dyna-label {
+	background-color: white;
+}
+
+#dark .style1 .dyna-label h2 {
+	color: #000;
+	text-shadow: 2px 2px 7px 2px rgba(255, 255, 255, 0.19);
+}
+
 a {
 	text-decoration: none;
 	margin: none;
@@ -68,14 +90,21 @@ a {
 	margin: 0 2vw;
 
 	border: 3px solid #000;
-	border-radius: 5px;
+	border-radius: 7px;
 
 	perspective: 10px;	
 	overflow: hidden;
+
+	box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
 }
 
 .style0 {
 	padding: 2em;
+	background-color: rgba(0,0,0,0);
+}
+
+.style0 h1, .style0 ul {
+	text-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.19);
 }
 
 .style1 {
@@ -84,17 +113,19 @@ a {
 
 .style1 .dyna-label {
 	width: 100%;
+	position:absolute;
+	bottom: -2px;
 	background-color: rgba(0,0,0,1);
 	padding: 1.5em;
+	box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.5);
 		
 	transition: transform 0.6s ease-in;
 
-	height: auto;
 	transform-origin: bottom;
 	transform:scaleY(0);
 }
 
-.tile-visible .dyna-label{
+.style1:hover .dyna-label {
 	transform: scaleY(1);
 	transition: transform 0.6s ease-out;
 } 
@@ -112,13 +143,15 @@ h1 {
 
 h2 {
 	font-family: 'League Spartan';
-	font-size: 4vmin;
-	line-height: 100%;
+	font-size: 4vh;
+	line-height: 120%;
 }
 
 .dyna-label h2{
 	color: #fff;
 	margin: 0;
+	position: relative;
+	bottom: -2px;
 }
 
 p {
@@ -166,8 +199,6 @@ img {
 	background: url("../img/233/render5.jpg");
 	background-size: cover;
 	background-position: center;
-	border-radius: 3px;
-
 	opacity:1;
 	top: 0;
 	left: 0;
