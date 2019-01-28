@@ -125,7 +125,7 @@ a {
 	transform:scaleY(0);
 }
 
-.style1:hover .dyna-label {
+.style1 .tile-visible {
 	transform: scaleY(1);
 	transition: transform 0.6s ease-out;
 } 
