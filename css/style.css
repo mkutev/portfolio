@@ -125,7 +125,7 @@ a {
 	transform:scaleY(0);
 }
 
-.style1 .tile-visible {
+.tile-visible .dyna-label{
 	transform: scaleY(1);
 	transition: transform 0.6s ease-out;
 } 
@@ -150,8 +150,8 @@ h2 {
 .dyna-label h2{
 	color: #fff;
 	margin: 0;
-	position: relative;
-	bottom: -2px;
+	/*position: relative;
+	bottom: -2px;*/
 }
 
 p {
