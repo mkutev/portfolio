@@ -65,6 +65,7 @@ a {
 
 .container{
 	display: flex;
+	flex-direction: row;
 	align-items: center;
 	margin: auto;
 	padding: 0 2vw;
@@ -85,6 +86,7 @@ a {
 .tile {
 	flex-shrink: 0;
 	display: flex;
+
 	flex-direction: column;
 	justify-content: flex-end;
 
@@ -108,11 +110,11 @@ a {
 	text-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.19);
 }
 
-.style1 {
+.style1, .style2 {
 	padding:0;
 }
 
-.style1 .dyna-label {
+.style1 .dyna-label, .style2 .dyna-label {
 	width: 100%;
 	position:absolute;
 	display: flex;
@@ -128,6 +130,11 @@ a {
 
 	transform-origin: bottom;
 	transform:scaleY(0);
+}
+
+.style2 .dyna-label {
+	flex-direction: column;
+	color: white;
 }
 
 .tile-visible .dyna-label{
