@@ -1,10 +1,11 @@
-/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Faster+One');
-*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*@import url('https://fonts.googleapis.com/css?family=Faster+One');*/
+
 
 *{
-	font-family: 'Junction', sans-serif;
-	font-size: 0.98em;
+	font-size: 15px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -17,8 +18,6 @@
 html{
 	overflow: hidden;
 	height: 100vh;
-
-	scroll-behavior: smooth;
 }
 
 
@@ -27,11 +26,8 @@ body{
 	display: flex;
 	height: 100%;
 	/*height: 100vh;*/	
-	
 	/*overflow-x: auto; OLD*/
-
 	overflow-x: scroll;
-
 	background-color: #fff;
 }
 
@@ -61,6 +57,15 @@ a {
 	text-decoration: none;
 	margin: none;
 	padding: none;
+}
+
+p {
+	/*line-height: 140%;*/
+	line-height: 1.2;
+	font-kerning: normal;
+	font-size: 1em;
+	font-family: "Open Sans", sans-serif;
+	font-weight: normal;
 }
 
 .container{
@@ -106,6 +111,13 @@ a {
 	background-color: rgba(0,0,0,0);
 }
 
+
+.style3 { 
+	padding: 2em;
+	background-color: rgba(0,0,0,0);
+	justify-content: space-around;
+}
+
 .style0 h1, .style0 ul {
 	text-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.19);
 }
@@ -133,8 +145,10 @@ a {
 }
 
 .style2 .dyna-label {
-	flex-direction: column;
+	flex-direction: row;
+	flex-wrap: wrap;
 	color: white;
+	padding: 5vmin;
 }
 
 .tile-visible .dyna-label{
@@ -160,14 +174,51 @@ h2 {
 	display: inline-block;
 }
 
-.dyna-label h2{
-	color: #fff;
+h3 {
+	font-family: "League Spartan", sans-serif;
+	margin: 1em 0 0 0;
+	font-size: 1.1em;
+}
+
+.dyna-label h2 {
 	margin: 0;
 	position: relative;
 	bottom: -2px;
 }
 
-.dyna-label a{
+.style1 .dyna-label h2{
+	color: #fff;
+}
+
+.style2 .dyna-label h3, 
+.style2 .dyna-label h2,
+.style2 .dyna-label p {
+	color: #fff;
+}
+
+.style2 .dyna-label p {
+	margin: 0.5em 0;
+}
+
+.style2 .cell-l {
+	margin-bottom: 2em;
+}
+
+.style2 .cell-r {}
+
+
+.style3 .cell-l {
+	flex-basis: 1;
+}
+
+.style3 .cell-r {
+	flex-basis:1;
+}
+
+
+
+
+.dyna-label a {
 	color: white;
 	font-family: 'League Spartan';
 	font-size: 2vh;
@@ -186,17 +237,6 @@ h2 {
 
 }
 
-p {
-	line-height: 140%;
-	font-family: 'League Spartan';
-	text-align: justify;
-	font-kerning: normal;
-}
-
-img {
-	width: 30%;
-	height: 30%;
-}
 
 
 /* Lists */
