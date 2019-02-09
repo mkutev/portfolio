@@ -5,7 +5,7 @@
 
 
 *{
-	font-size: 15px;
+	font-size: 14px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -71,6 +71,7 @@ p {
 .container{
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 	align-items: center;
 	margin: auto;
 	padding: 0 2vw;
@@ -88,6 +89,8 @@ p {
 .x2 { width: 186vw; max-width: 150vh; }
 
 
+
+
 .tile {
 	flex-shrink: 0;
 	display: flex;
@@ -96,7 +99,7 @@ p {
 	justify-content: flex-end;
 
 	height: 75vh;
-	margin: 0 6vmin;
+	/*margin: 6vmin;*/
 
 	border: 3px solid #000;
 
@@ -104,6 +107,20 @@ p {
 	overflow: hidden;
 
 	box-shadow: 2px 2px 20px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 100vh) {
+  .tile {
+	/*border: 3px dashed #000;*/
+  }
+
+  .container {
+  	flex-direction: column;
+  }
+
+  body {
+  	overflow-y: scroll;
+  }
 }
 
 .style0 {
