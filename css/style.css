@@ -99,7 +99,7 @@ p {
 	justify-content: flex-end;
 
 	height: 75vh;
-	/*margin: 6vmin;*/
+	margin: 0 6vmin;
 
 	border: 3px solid #000;
 
@@ -112,6 +112,8 @@ p {
 @media only screen and (max-width: 100vh) {
   .tile {
 	/*border: 3px dashed #000;*/
+	margin: 6vmin 0;
+
   }
 
   .container {
