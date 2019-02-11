@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
-
 /*@import url('https://fonts.googleapis.com/css?family=Faster+One');*/
 
 
@@ -23,6 +22,7 @@ html{
 
 
 body{
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=47467), auto;
 	display: flex;
 	height: 100%;
 	/*height: 100vh;*/	
@@ -78,7 +78,12 @@ p {
 	height: var(--inner-height);
 }
 
-.xs{ width:15vw; }
+.xs{ 
+	width:10vw;
+	position: absolute;
+	z-index:10;
+	background-color: rgba(0,0,0,0.6);
+}
 
 .s { width: 25vw; }
 
@@ -160,7 +165,7 @@ p {
 	transition: transform 0.6s ease-in;
 
 	transform-origin: bottom;
-	transform:scaleY(0);
+	transform:scaleY(1);
 }
 
 .style2 .dyna-label {
@@ -234,8 +239,23 @@ h3 {
 	flex-basis:1;
 }
 
+.style3 .cell-r img {
+	/*max-width:  width: 90vw; */
+	/*max-width: 33vh;*/
+}
 
 
+.main-nav {
+	display: block;
+	position:absolute;
+	left: 50%;
+	top: 4vh;
+}
+
+.main-nav a {
+	font-family: "Open Sans", sans-serif;
+	font-weight: bold;
+}
 
 .dyna-label a {
 	color: white;
@@ -326,4 +346,20 @@ img {
 	position: absolute;
 	z-index: -1;   
 }
+
+
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 
