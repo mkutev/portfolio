@@ -118,12 +118,15 @@ p {
   .tile {
 	/*border: 3px dashed #000;*/
 	margin: 6vmin 0;
-
   }
 
   #highline.style2.tile {
   	margin-top: 12vmin;
   }
+
+  .tile.style3{
+	height: auto;
+}
 
   .container {
   	flex-direction: column;
@@ -132,6 +135,12 @@ p {
   body {
   	overflow-y: scroll;
   }
+}
+
+@media only screen and (min-width: 100vh) {
+	.tile {
+		height: 75vh;
+	}
 }
 
 .style0 {
