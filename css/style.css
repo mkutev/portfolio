@@ -121,6 +121,10 @@ p {
 
   }
 
+  #highline.style2.tile {
+  	margin-top: 12vmin;
+  }
+
   .container {
   	flex-direction: column;
   }
@@ -140,6 +144,11 @@ p {
 	padding: 2em;
 	background-color: rgba(0,0,0,0);
 	justify-content: space-around;
+}
+
+
+.tile.style3{
+	height: auto;
 }
 
 .style0 h1, .style0 ul {
@@ -248,8 +257,9 @@ h3 {
 .main-nav {
 	display: block;
 	position:absolute;
-	left: 50%;
+	left: 45%;
 	top: 4vh;
+	z-index: 11;
 }
 
 .main-nav a {
@@ -360,6 +370,6 @@ img {
 .material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
 
 /* Rules for using icons as white on a dark background. */
-.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light { color: rgba(255, 255, 255, 1); text-shadow: 3px 3px 3px rgba(0,0,0,0.2);}
 .material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
 

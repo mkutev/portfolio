@@ -24,7 +24,7 @@
 	<body>
 
 		<nav class="main-nav">
-			<a href="index.html"><i class="material-icons md-36">home</i></a>	
+			<a href="index.html"><i class="material-icons md-light md-36">home outlined</i></a>	
 		</nav>
 
 		<div class="container">
@@ -132,19 +132,30 @@
 			});
 		</script>
 
-		<!-- <script>
+		<script>
+			var viewportWidth;
+			var viewportHeight;
+
 	  		$(function() {
 
 	  			$("body").mousewheel(function(event, delta) {
+	  				viewportWidth = $(window).width();
+	  				viewportHeight = $(window).height();
 
-	    			this.scrollLeft -= (delta * 10);
-	    
-	      			event.preventDefault();
+	  				if (viewportWidth > viewportHeight) {
+	  					this.scrollLeft -= (delta * 10);
+	      				event.preventDefault();
+	      				console.log("Scrolling Sideways")
+	  				} else {
+	  					this.scrollTop  -= (delta * 10);
+	      				event.preventDefault();
+	      				console.log("Scrolling Down")
+	  				}
 	      			// console.log($(window).scrollLeft());
 	   			});
 
 			});
-  		</script> -->
+  		</script>
 
   		<script>
   			$('.tile').each(function( index ) {

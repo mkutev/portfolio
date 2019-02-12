@@ -109,13 +109,24 @@
 		</script>
 
 		<script>
+	  		var viewportWidth;
+			var viewportHeight;
+
 	  		$(function() {
 
 	  			$("body").mousewheel(function(event, delta) {
+	  				viewportWidth = $(window).width();
+	  				viewportHeight = $(window).height();
 
-	    			this.scrollLeft -= (delta * 10);
-	    
-	      			event.preventDefault();
+	  				if (viewportWidth > viewportHeight) {
+	  					this.scrollLeft -= (delta * 10);
+	      				event.preventDefault();
+	      				console.log("Scrolling Sideways")
+	  				} else {
+	  					this.scrollTop  -= (delta * 10);
+	      				event.preventDefault();
+	      				console.log("Scrolling Down")
+	  				}
 	      			// console.log($(window).scrollLeft());
 	   			});
 
