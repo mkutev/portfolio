@@ -264,7 +264,7 @@ h3 {
 }
 
 #gallery {
-	justify-content: space-between;
+	justify-content: space-around;
 }
 #gallery .cell-r{
 	display: table;
