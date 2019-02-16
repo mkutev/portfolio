@@ -115,31 +115,41 @@ p {
 }
 
 @media only screen and (max-width: 100vh) {
-  .tile {
+ 	.tile {
 	/*border: 3px dashed #000;*/
-	margin: 6vmin 0;
-  }
+		margin: 6vmin 0;
+  	}
 
-  #highline.style2.tile {
-  	margin-top: 12vmin;
-  }
+  	#highline.style2.tile {
+  		margin-top: 12vmin;
+  	}
 
-  .tile.style3{
-	height: auto;
-}
+	.tile.style3, #gallery{
+		height: auto;
+	}
 
-  .container {
-  	flex-direction: column;
-  }
+	#gallery.tile {
+		width: 90vw;
+		max-width: 75vh;
+	}
 
-  body {
-  	overflow-y: scroll;
-  }
+  	.container {
+  		flex-direction: column;
+  	}
+
+  	body {
+  		overflow-y: scroll;
+  	}
 }
 
 @media only screen and (min-width: 100vh) {
 	.tile {
 		height: 75vh;
+	}
+	
+
+	#gallery.tile {
+		width: 40vh;
 	}
 }
 
@@ -253,10 +263,19 @@ h3 {
 	flex-basis:1;
 }
 
-.style3 .cell-r img {
-	/*max-width:  width: 90vw; */
-	/*max-width: 33vh;*/
+#gallery {
+	justify-content: space-between;
 }
+#gallery .cell-r{
+	display: table;
+}
+
+#gallery a{
+	display: block;
+	width: auto;
+	height: auto;
+}
+
 
 
 .main-nav {
@@ -280,7 +299,7 @@ h3 {
 	padding: 15px 20px 10px 20px;
 	line-height: 1;
 	transition: all 0.6s ease-out;
-	margin-left: 2em;
+	margin-left: 2em; 
 }
 
 .dyna-label a:hover {
@@ -288,10 +307,7 @@ h3 {
 	background-color: white;
 	border: 1px solid black;
 	transition: all 0.6s ease-out;
-
 }
-
-
 
 /* Lists */
 ul {
@@ -317,51 +333,26 @@ img {
 	height: auto;
 }
 
-
-
-#highline::after {
+#highline::after, 
+#esdc::after, 
+#dnd::after,
+#xuan::after {
 	content: "";
-	background: url("../img/233/render5.jpg");
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 	opacity:1;
 	top: 0;
 	left: 0;
-	bottom: 0;
+	bottom: 0;	
 	right: 0;
 	position: absolute;
 	z-index: -1;   
 }
 
-
-#esdc::after {
-	content: "";
-	background: url("../img/ethonomics2.jpg");
-	background-size: cover;
-	background-position: center;
-	opacity: 1;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;   
-}
-
-#dnd::after {
-	content: "";
-	background: url("../img/sutherland.jpg");
-	background-size: cover;
-	background-position: center;
-	opacity: 1;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	position: absolute;
-	z-index: -1;   
-}
-
+#highline::after { background: url("../img/233/render5.jpg"); background-size: cover; background-position: center;}
+#esdc::after { background: url("../img/ethonomics2.jpg"); background-size: cover; background-position: center;}
+#dnd::after { background: url("../img/sutherland.jpg"); background-size:  cover; background-position: center;}
+#xuan::after { background: url("../img/xuan/render-frontright-bw.jpg");background-size:  cover; background-position: center;}
 
 
 /* Rules for sizing the icon. */
