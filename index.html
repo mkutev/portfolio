@@ -84,10 +84,47 @@
 		</div>
 
 		<script>
+			//Fullscreen script inspired from https://www.w3schools.com/jsref/met_element_requestfullscreen.asp
 			var goFS = document.getElementById("fullscreen");
+			var isFS = false; 
+
 			goFS.addEventListener('click', function() {
-				document.body.requestFullscreen();
+				if (isFS == false) {
+					openFullscreen();	
+					isFS = true; 
+				} else {
+					closeFullscreen();
+					isFS = false; 
+				}
 			}, false);
+
+			var elem = document.documentElement;
+
+			/* View in fullscreen */
+			function openFullscreen() {
+			  if (elem.requestFullscreen) {
+			    elem.requestFullscreen();
+			  } else if (elem.mozRequestFullScreen) { /* Firefox */
+			    elem.mozRequestFullScreen();
+			  } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+			    elem.webkitRequestFullscreen();
+			  } else if (elem.msRequestFullscreen) { /* IE/Edge */
+			    elem.msRequestFullscreen();
+			  }
+			}
+
+			/* Close fullscreen */
+			function closeFullscreen() {
+			  if (document.exitFullscreen) {
+			    document.exitFullscreen();
+			  } else if (document.mozCancelFullScreen) { /* Firefox */
+			    document.mozCancelFullScreen();
+			  } else if (document.webkitExitFullscreen) { /* Chrome, Safari and Opera */
+			    document.webkitExitFullscreen();
+			  } else if (document.msExitFullscreen) { /* IE/Edge */
+			    document.msExitFullscreen();
+			  }
+			}
 		</script>
 
 		<script>
