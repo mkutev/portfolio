@@ -189,7 +189,7 @@ p {
 	transition: transform 0.6s ease-in;
 
 	transform-origin: bottom;
-	transform:scaleY(1);
+	transform:scaleY(0);
 }
 
 .style2 .dyna-label {
@@ -359,7 +359,7 @@ img {
 
 #highline::after { background: url("../img/233/render5.jpg"); background-size: cover; background-position: center;}
 #esdc::after { background: url("../img/ethonomics2.jpg"); background-size: cover; background-position: center;}
-#dnd::after { background: url("../img/sutherland.jpg"); background-size:  cover; background-position: center;}
+#dnd::after { background: url("../img/dnd/thumb.png"); background-size:  cover; background-position: center;}
 #xuan::after { background: url("../img/xuan/render-frontright-bw.jpg");background-size:  cover; background-position: center;}
 
 
