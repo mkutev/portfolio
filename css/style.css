@@ -357,7 +357,7 @@ img {
 	z-index: -1;   
 }
 
-#highline::after { background: url("../img/233/render5.jpg"); background-size: cover; background-position: center;}
+#highline::after { background: url("../img/233/233render.jpg"); background-size: cover; background-position: center;}
 #esdc::after { background: url("../img/ethonomics2.jpg"); background-size: cover; background-position: center;}
 #dnd::after { background: url("../img/dnd/thumb.png"); background-size:  cover; background-position: center;}
 #xuan::after { background: url("../img/xuan/render-frontright-bw.jpg");background-size:  cover; background-position: center;}
