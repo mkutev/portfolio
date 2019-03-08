@@ -9,17 +9,20 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	transition: height 0.3s ease-out;
-	color: #000;
+	scolor: #000;
 	border-radius: 7px;
 }
 
+*:fullscreen, *:-webkit-full-screen, *:-moz-full-screen {
+    background-color: #ffffff;
+}
 
 html{
 	overflow: hidden;
 	height: 100vh;
+    background-color: #ffffff;
+
 }
-
-
 
 body{
 	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=47467), auto;
@@ -28,7 +31,8 @@ body{
 	/*height: 100vh;*/	
 	/*overflow-x: auto; OLD*/
 	overflow-x: scroll;
-	background-color: #fff;
+	background-color: #ffffff;
+
 }
 
 #dark {

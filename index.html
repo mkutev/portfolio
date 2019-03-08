@@ -42,7 +42,7 @@
 			<div id="dnd" class="tile x1 style1">
 				<div class="dyna-label">
 					<h2>D&D Beyond</h2>
-					<a class="btn" href="#">Coming Soon</a>
+					<a id="fullscreen" class="btn" href="#">Coming Soon</a>
 				</div>
 			</div>
 			
@@ -82,6 +82,13 @@
 
 			
 		</div>
+
+		<script>
+			var goFS = document.getElementById("fullscreen");
+			goFS.addEventListener('click', function() {
+				document.body.requestFullscreen();
+			}, false);
+		</script>
 
 		<script>
 			// jQuery smooth scroll script from https://css-tricks.com/snippets/jquery/smooth-scrolling/
