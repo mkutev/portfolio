@@ -1,0 +1,343 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MyWorkPoint / MonPointdeTravail</title>
+
+    <script type="text/javascript">
+    	(function($) {
+   $.fn.flowtype = function(options) {
+
+// Establish default settings/variables
+// ====================================
+      var settings = $.extend({
+         maximum   : 9999,
+         minimum   : 1,
+         maxFont   : 9999,
+         minFont   : 1,
+         fontRatio : 35
+      }, options),
+
+// Do the magic math
+// =================
+      changes = function(el) {
+         var $el = $(el),
+            elw = $el.width(),
+            width = elw > settings.maximum ? settings.maximum : elw < settings.minimum ? settings.minimum : elw,
+            fontBase = width / settings.fontRatio,
+            fontSize = fontBase > settings.maxFont ? settings.maxFont : fontBase < settings.minFont ? settings.minFont : fontBase;
+         $el.css('font-size', fontSize + 'px');
+      };
+
+// Make the magic visible
+// ======================
+      return this.each(function() {
+      // Context for resize callback
+         var that = this;
+      // Make changes upon resize
+         $(window).resize(function(){changes(that);});
+      // Set changes on load
+         changes(this);
+      });
+   };
+}(jQuery));
+    </script>
+
+</head>
+
+<body>
+
+<section class="super-body">
+	<section class="about-page">
+
+	
+<!-- NAVBAR -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand logo" href="http://www.gcpedia.gc.ca/wiki/Main_Page"></a>
+            </div>
+			
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+		    		<li><a href="Index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Locations.html">Locations</a></li>	
+                    <li><a href="Tools.html">Tools</a></li>	
+                    <li><a href="Training.html">Training</a></li>	
+                    <li><a href="Help.html">Help</a></li>
+                </ul>
+				
+				<ul class="nav navbar-nav navbar-right">
+                    <li><a href="http://www.gcpedia.gc.ca/wiki/Main_Page">Home</a></li>
+                    <li><a href="http://www.gcpedia.gc.ca/wiki/GCworkplace-Renewal-About-fr">FR</a></li>	
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- BANNER WITH IMAGE-->
+    <div class="jumbotron j2" style="box-shadow:none;background-image: url('https://www.artlebedev.com/innova/innova-cover.jpg');background-position-y:center; background-size:auto; background-color: white;">
+        <div class="container" style="width: 65%;"></div>
+    </div>
+
+
+
+<!-- MAIN CONTENT -->
+    <section class="home-tiles">
+        
+		<div class="container" id="full-wide">
+        <div class="row" id="about">
+			
+			
+			<div class="col-sm-12 col-lg-4">
+                <h1 class="big-h1" style="margin-top: 0px;">About The Initiative</h1>
+                <ul class="shortcuts" style="list-style: none; margin-left: 5px;">
+                	<li><span style="border-bottom: 0px solid black; font-weight: 400;"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+Jump To:</span></li>
+                    <li><a href="#network">The Network</a></li>
+                    <li><a href="#background">Background</a></li>
+                    <li><a href="#workplace-sol">About Workplace Solutions</a></li>
+<!--                     <li><a href="http://intranet.tpsgc-pwgsc.gc.ca/rh-hr/mieuxetre-wellness/sante-health/quisommes-whoweare-eng.html ">Health & Occupational Safety</a></li> -->
+                </ul>
+			</div> 
+
+            <div class="col-lg-8 col-sm-12" style="margin-top: 0px; text-align: justify;">
+					<p style="margin-bottom: 20px; margin-top: 0px;"><i>MyWorkPoint</i> <sup>(BETA)</sup> is a website that gives you access to a multitude of resources that will aid you in successfully navigating your workplace as a mobile worker.</p>
+
+					<p style="margin-bottom: 20px;">Most importantly, this website will provide you with essential information on every unassigned workplace available to you; details can be found under the <b><a href="Locations.html"><i class="fa fa-link" aria-hidden="true"></i> Locations</a></b> tab. Currently, we have displayed floor plans, as well as Wi-Fi and security specifications, and soon we will have more information on amenities such as food, transportation and parking. Please send us an email through the Help page of this site, if you think there is any information missing.</p>
+						
+					<p style="margin-bottom: 20px;">Additionally we have a collection of self-paced online tools for you to browse through in the <b><a href="Tools.html"><i class="fa fa-link" aria-hidden="true"></i> Tools</a></b> section. Reading through these tools is highly recommended as they will give you a general understanding of the kind of behaviours and styles of work that are necessary to function efficiently in an unassigned workplace.</p>
+
+					<p style="margin-bottom: 30px;">Aside from our online resources, real time <b>training sessions</b> lead by Real Property Services’ Strategic Planning, Administration and Renewal Sector (SPAR) will be available. These comprehensive sessions will cover a number of topics ranging from telework to managing mobile teams. More information on registration will be available in October when the sessions officially begin.</p>
+					
+					<h3 style="color: #6495ed;">Why is MyWorkpoint in BETA?</h3>	
+					<p style="margin-bottom: 0px;">PSPC is leading the Government of Canada in the move to a more modern, flexible workplace. A number of PSPC organisations and their employees are acting as early adopters of new ways of working that are associated with the modern workplace. As we begin implementing new workplaces, and adopting new behaviours, we must also implement the enabling tools to support our success and in turn to help inform other government departments as they embark on their own workplace modernization journeys. This MyWorkPoint (BETA) site is for use by our department and is an opportunity to test this type of platform as a model going forward.  We welcome your feedback on this site, on the information you find here, what do you love, what’s missing, and more! Click on the email us now button on the <b><a href="Help.html"><i class="fa fa-link" aria-hidden="true"></i> Help</a></b> page to leave a comment or ask a question.</p>
+            </div>
+	
+
+		</div>
+
+
+
+<hr class="div-yellow">
+
+        <div class="row" id="network">
+					
+			
+			<div class="col-sm-12 col-lg-4" id="background">
+                <h1 class="big-h1" style="margin-top: 0px;">The Network</h1>
+			</div> 
+
+            <div class="col-lg-8 col-sm-12" style="margin-top: 0px; text-align: justify;">
+					<p style="margin-bottom: 20px;">MyWorkPoint is a resource for the network of mobile workers within PSPC that work without assigned workstations and benefit from a variety of workplaces and types of environments to support their activities and needs. workplaces. If you’re interested in joining this network, talk to your manager and contact us to learn about how this flexible working environment can be made possible for you and your colleagues.</i></p>
+						
+					<p style="margin-bottom: 0px;">Visit <b><a href="https://masource-mysource.spac-pspc.gc.ca/eng/irmt-wri/Pages/default.aspx"><i class="fa fa-link" aria-hidden="true"></i>Workplace Renewal Initiative</a></b> on PSPC’s The Source  to find out more about PSPC’s plans to modernize workplaces or visit <b><a href="http://intranet.tpsgc-pwgsc.gc.ca/finance/ggm-cmg/index-eng.html"><i class="fa fa-link" aria-hidden="true"></i> Corporate Accommodation</a></b> on The Source to find out more about your own accommodation situation. </p>
+
+            </div>
+			
+		</div>
+
+
+<hr class="div-yellow">
+
+        <div class="row" id="background">
+					
+			
+			<div class="col-sm-12 col-lg-4" id="background">
+                <h1 class="big-h1" style="margin-top: 0px;">Background</h1>
+			</div> 
+
+            <div class="col-lg-8 col-sm-12" style="margin-top: 0px; text-align: justify;">
+					<p style="margin-bottom: 20px;">Currently, the Government of Canada makes real estate decisions based on the number of FTEs, organizational structures, and offices, largely predicated on the one person-one cube paradigm. </p>
+
+					<p style="margin-bottom: 20px;">Today, 30–40% of the GC office portfolio is under-utilized and 90% of short-term leases are renewed every two years. In addition, approximately 7% of office space has been fit-up to WP2.0 standards and alternate work arrangements are rarely considered in office design or in the provision of unassigned seating. </p>
+						
+					<p style="margin-bottom: 20px;">All WP2.0 designs are currently 1:1 ratio, which essentially means if the employee is in a meeting, on training or holidays or assignment, or is sick, that cubicle sits empty. As a consequence, productivity is not measured, health and wellness is not considered, innovation and creativity is reduced, and the GC portfolio is not “green”. </p>
+
+					<p style="margin-bottom: 20px;">The bottom line: <i>We are not using our spaces well and evidence would suggest we are not leveraging technology to the fullest.</i></p>
+
+					<p style="margin-bottom: 20px;">Employees are in favour of a change – as shown through the Public Service Employee Survey, employees have a strong desire for a healthier work environment that is more supportive of work/life balance.  They want a healthy, connected, collaborative work environment and a culture that empowers them. </p>
+
+					<p style="margin-bottom: 0px;">Modern workplaces deliver unassigned environments that allow much greater freedom of choice, flexibility and a variety of work points. This empowers employees, leading to more engagement and better productivity.</p>
+
+            </div>
+			
+		</div>
+
+
+<!-- <hr class="div-green">
+
+
+		<div class="row" id="member">       
+					
+			<div class="col-sm-12 col-lg-4" id="membership">
+                <h1 class="big-h1" style="margin-top: 0px;">Membership</h1>
+			</div> 
+
+            <div class="col-sm-12 col-lg-8" style="margin-top: 0px; text-align: justify;">
+					<p style="margin-bottom: 20px;">To learn more about the network of unassigned workplaces refer to our GCworkplace page! Membership to this network isn’t done on an individual basis, and must be done through the administration of your sector. For more information, please refer to the Financial Administration Branch’s (FAB) website. On occasion we allow Guest members to test out the spaces for the length of one working day; in order to submit a request please contact ____________.</p>
+						
+					<p style="margin-bottom: 0px;">Pellentesque sit amet lectus vitae sapien vestibulum viverra. Donec finibus velit in magna molestie, quis dictum est condimentum. Aenean metus lacus, pulvinar sit amet faucibus mattis, sagittis venenatis dolor. Donec pretium porttitor posuere. Suspendisse potenti. Nam luctus enim dui, quis varius metus vulputate quis.</p>
+
+            </div>
+			
+		</div> -->
+
+
+<hr class="div-blue">
+
+
+		<div class="row">
+					
+			<div class="col-sm-12 col-lg-4" id="workplace-sol">
+                <h1 class="big-h1" style="margin-top: 0px;">About Workplace Solutions</h1>
+			</div> 
+
+            <div class="col-sm-12 col-lg-8" style="margin-top: 0px; text-align: justify;">
+					<p style="margin-bottom: 20px;">Workplace Solutions is a national service line that delivers a suite of services that help federal departments achieve a modern, high performing GCworkplace that supports employees and their activities. These services include interior design, project leadership, accommodation management policy and guidance, and change management advice and guidance.</p>
+
+					<p style="margin-bottom: 20px;">The vision that PSPC has for the GCworkplace is in line with the Destination 2020 vision, which is to be able to move forward on the kinds of workplaces, work spaces, work tools, work processes and systems that fully unleash the creativity, passion, and commitment of public servants across Canada.</p>
+						
+					<p style="margin-bottom: 0px;">For more pointed questions, refer to the chart below to contact the appropriate member of Workplace Solutions who will able provide you with the answers you’re looking for.</p>
+            </div>
+		</div>
+
+	
+
+		<div class="row">
+				
+				
+			<div class="col-lg-4 col-sm-0"></div>	
+
+			<div class="contact-list">
+
+            <div class="col-sm-6 col-lg-4" style=" margin-top: 40px;"">
+			
+				<div class="contact">
+					<p><b>Workplace Solutions Generic Mailbox</b></p> 
+					<div id="indent">
+						<p>TPSGC.MT2-WP2.PWGSC@tpsgc-pwgsc.gc.ca </p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">
+				</div>
+
+
+				<div class="contact">
+					<p><b>Policies</b></p>
+					<div id="indent">
+						<p>Daniel Groulx </p>
+						<p>DanielX.Groulx@tpsgc-pwgsc.gc.ca </p>
+						<p>613-222-8418</p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">					
+				</div>
+
+				<div class="contact">
+					<p><b>Furniture Procurement</b></p>
+					<div id="indent">
+						<p>Alexandra Reid</p>
+						<p>Alexandra.Reid@tpsgc-pwgsc.gc.ca</p>
+						<p>613-868-4706</p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">					
+				</div>				
+
+			</div>
+
+			<div class="col-sm-6 col-lg-4" style="margin-top: 40px;">
+
+				<div class="contact">
+					<p><b>Change Management and Outreach</b></p>
+					<div id="indent">
+						<p>Susan Danesh </p>
+						<p>Suesan.Danesh@tpsgc-pwgsc.gc.ca </p>
+						<p>613-462-1902</p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">
+				</div>
+
+				<div class="contact">
+					<p><b>Interior Deisgn - CoE</b></p>
+					<div id="indent">
+						<p>Julie Jocelyn</p>
+						<p>Julie.Jocelyn@tpsgc-pwgsc.gc.ca </p>
+						<p>819-639-4847</p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">
+				</div>
+
+				<div class="contact">
+					<p><b>Real Property Services Catalogue – Workplace Solutions</b></p>
+					<div id="indent">
+						<p>Denis Gibeault</p>
+						<p>Denis.gibeault@tpsgc-pwgsc.gc.ca</p>
+						<p></p>
+					</div>
+					<hr style="height:1px; border:none; color:rgba(0,0,0,0); background-color:rgba(0,0,0,0); margin-top: 50px; margin-bottom: 5px;">
+				</div>								
+				
+			</div>
+			</div>
+
+		</div>
+		
+		</div>
+    </section>
+	
+	
+<!-- MAIN MENU BAR -->
+	<section class="footer">
+	
+        <div class="container">
+		<div class="row">
+
+				<div class="col-sm-12">
+					<p style="text-align: right; margin: none; padding: none;"> &copy <script type="text/javascript">document.write(new Date().getFullYear())</script> Workplace Solutions</p>
+
+				</div>
+
+		</div>
+        </div>
+	</section>
+
+	
+	</section>
+</section>
+
+<script type="text/javascript">
+
+	$('body').flowtype({
+		minimum   : 300,
+		maximum   : 1700,
+		minFont   : 12,
+ 		maxFont   : 40,
+ 		fontRatio : 20
+	});
+
+	$('.big-h1').flowtype({
+		minimum	: 400,
+		maximum : 1700,
+		minFont : 50,
+		maxFont : 70, 
+		fontRatio : 40
+	})
+</script>
+</body>
+
+</html>
