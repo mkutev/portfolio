@@ -381,8 +381,8 @@ img {
 }
 
 #highline::after { background: url("../img/233/rawmodel3.png"); background-size: cover; background-position: center;}
-#dnd::after { background: url("../img/dnd/thumb.png"); background-size:  cover; background-position: center;}
-#xuan::after { background: url("../img/xuan/render-frontright-bw.jpg");background-size:  cover; background-position: center;}
+#dnd::after { background: url("../img/dnd/thumbsmoll.jpg"); background-size:  cover; background-position: center;}
+#xuan::after { background: url("../img/xuan/render-frontright-smoll.jpg");background-size:  cover; background-position: center;}
 #workplace::after { stroke: #fdc400; background: url("../img/ethonomics2.jpg");  background-size: cover; background-position: center;}
 #esdc::after { background: url("../img/topography.svg"); background-size: cover; background-position: center; }
 
