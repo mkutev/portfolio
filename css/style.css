@@ -128,7 +128,7 @@ p {
   	}
 
 	.tile.style3, #gallery{
-		height: auto;
+		height: 100%;
 	}
 
 	#gallery.tile {
@@ -152,7 +152,7 @@ p {
 	
 
 	#gallery.tile {
-		width: 40vh;
+		max-width: 20vh;
 	}
 
 	.style0 p{
@@ -233,7 +233,7 @@ h2 {
 h3 {
 	font-family: "League Spartan", sans-serif;
 	margin: 1em 0 0 0;
-	font-size: 1.1em;
+	font-size: 1.3em;
 }
 
 .dyna-label h2 {
@@ -278,14 +278,12 @@ h3 {
 }
 
 #gallery .cell-r {
-	position: relative;
-	overflow: scroll;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
 }
 
-#gallery .scrollbox{
-}
-
-.style3 a{
+#gallery .cell-r a{
 	display: block;
 }
 
@@ -421,10 +419,10 @@ img {
 	z-index: -1;   
 }
 
-#highline::after { background: url("../img/233/rawmodel3.png"); background-size: cover; background-position: center;}
+#highline::after { background: url("../img/233/rawmodel3.jpg"); background-size: cover; background-position: center;}
 #dnd::after { background: url("../img/dnd/thumbsmoll.jpg"); background-size:  cover; background-position: center;}
 #xuan::after { background: url("../img/xuan/render-frontright-smoll.jpg");background-size:  cover; background-position: center;}
-#workplace::after { stroke: #fdc400; background: url("../img/ethonomics2.jpg");  background-size: cover; background-position: center;}
+#workplace::after { background: url("../img/workplace/ethonomics3.jpg");  background-size: cover; background-position: top;}
 #esdc::after { background: url("../img/topography.svg"); background-size: cover; background-position: center; }
 
 

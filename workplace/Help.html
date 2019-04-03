@@ -4,15 +4,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-   
 
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <title>MyWorkPoint / MonPointdeTravail</title>
+
 
 </head>
 
@@ -20,30 +20,21 @@
     <section class="help-page">
 
 <!-- NAVBAR -->
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                        <span class="sr-only">Toggle navigation</span>
-                      </button>
-                <a class="navbar-brand logo" href="https://www.canada.ca/en/employment-social-development/corporate/portfolio/service-canada.html"></a>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-left">
-                    <li><a href="Index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Locations.html">Locations</a></li> 
-                    <li><a href="Tools.html">Tools</a></li> 
-                    <li><a href="Training.html">Training</a></li>   
-                    <li><a href="Help.html">Help</a></li>
-                </ul>
-				
-				<ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://www.gcpedia.gc.ca/wiki/Main_Page">Home</a></li>
-                    <li><a href="http://www.gcpedia.gc.ca/wiki/GCworkplace-Renewal-Training-fr">FR</a></li>	
-                </ul>
-            </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="position:fixed !important; background-color: #e3f2fd;">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="index.html">Home</a>
+          <a class="nav-item nav-link" href="About.html">About</a>
+          <a class="nav-item nav-link" href="Locations.html">Locations</a>
+          <a class="nav-item nav-link" href="Tools.html">Tools</a>
+          <a class="nav-item nav-link active" href="Help.html">Help<span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="Training.html">Training</a>
         </div>
+      </div>
     </nav>
 
 <!-- BIG BANNER WITH IMAGE -->
@@ -62,10 +53,11 @@
         <div class="container" style="width: 80%;">
 
             <div class="row">
-				
+
 				<div class="col-sm-3">
                     <h1 class="big-h1" style="margin-top: 0px;">Help</h1>
                     <ul style="list-style: none; margin-left: 5px;">
+                        <li><span style="border-bottom: 0px solid black; font-weight: 400;"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>Jump To:</span></li>
                         <li><a href="#security">Security</a></li>
                         <li><a href="#lostfound">Lost & Found</a></li>
                         <li><a href="#occupational">Occupational Health & Safety</a></li>
@@ -74,7 +66,7 @@
                         <li><a href="#info-mng">Information Management</a></li>
                         <li><a href="#alt-arrangements">Alternative Work Arrangements</a></li>
                     </ul>
-				</div> 
+				</div>
 
                 <div class="col-sm-9" style="margin-top: 10px; border-left: 1px dashed black; padding-left: 30px;">
 
@@ -123,7 +115,7 @@
                     <div id="alt-arrangements">
                         <h2>Alternative Work Arrangements 2</h2>
                         <p>If you wish to work from a different location than your original place of work, you must present your PSPC pass to the commissioner at the front, or let them know you are a PSPC employee. They will then run a check on you, and give you a temporary pass; this pass will enable you to open the front security doors, however you will need someone to give you access to the desired floor.</p>
-                        <p>A solution to facilitate this process is under works, and should soon be in place to allow employees to freely move on and off the unassigned floors.</p>    
+                        <p>A solution to facilitate this process is under works, and should soon be in place to allow employees to freely move on and off the unassigned floors.</p>
                     </div>
 
                 </div>
@@ -131,22 +123,23 @@
             </div>
         </div>
     </section>
-	
-    	
-    <!-- MAIN MENU BAR -->
-<!--     <section class="footer">
+
+
+    <!-- Footer -->
+    	<section class="footer">
 
             <div class="container">
-    			<div class="row">
-    			
-                    <div class="col-sm-12">
-                        <p style="text-align: right;"> &copy <script type="text/javascript">document.write(new Date().getFullYear())</script> Workplace Solutions</p>
-                    </div>
-    			
-    			</div>
+    		<div class="row">
+
+    				<div class="col-sm-12">
+    					<p style="text-align: right; margin: none; padding: none;"> &copy <script type="text/javascript">document.write(new Date().getFullYear())</script> Workplace Solutions</p>
+
+    				</div>
+
+    		</div>
             </div>
-    </section> -->
-	
+    	</section>
+
     </section>
 </section>
 </html>

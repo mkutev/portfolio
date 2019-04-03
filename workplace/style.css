@@ -6,7 +6,7 @@
     #mw-panel {
         display: none;
     }
-    
+
     html,
     body {
         height: 100%;
@@ -18,7 +18,7 @@
         transition: all .4s ease-in;
 
     }
-    
+
     @keyframes fadein {
         from {
             opacity: 0;
@@ -27,7 +27,7 @@
             opacity: 1;
         }
     }
-    
+
     @-webkit-keyframes fadein {
         from {
             opacity: 0;
@@ -36,26 +36,26 @@
             opacity: 1;
         }
     }
-    
-   
+
+
     * {
         margin: 0;
         padding: 0;
     }
-    
+
     .navbar-default .navbar-nav>li>a:visited {
 		text-decoration: none;
-		
+
     }
 
-    
+
     body {
         overflow-y: hidden;
         background-color: #f8f8f8;
         font-size: 18px;
         transition: all 0.5s ease;
     }
-    
+
     .super-body {
         position: fixed;
         overflow-y: scroll;
@@ -83,20 +83,9 @@
     }
 
     #home-box{
-        /*background-color: rgba(200,200,200,0.7);*/
-        background-color: rgba(242,212,89,0.8);
-        width: 100%;
-        height: auto;
-        border: 1px solid gray;
-        /*border-left: 1px solid black;
-        border-right: 1px solid black;*/
-        /*box-sizing: hadow: -2px 0px 5px rgba(0,0,0,0.5), 2px 0px 5px rgba(0,0,0,0.5);*/
-        padding: 50px 4vw;
-        margin:auto;
-        margin-top: 12vh;
 
     }
-    
+
     div#mw-head {
         position: absolute;
         top: 145px;
@@ -104,7 +93,7 @@
         width: 100%;
         display: none;
     }
-    
+
     div#mw-panel {
         font-size: inherit;
         position: absolute;
@@ -114,25 +103,21 @@
         left: 0;
         display: none;
     }
-    
-    #footer {
-        display: none;
-    }
-    
+
     .mw-content-ltr ul,
     .mw-content-rtl .mw-content-ltr ul {
         margin: 0;
     }
-    
+
     .mw-body {
         margin-left: 0;
         padding: 0;
     }
-    
+
     .mw-body .mw-body-content h1 {
         margin-top: 0;
     }
-    
+
     .mw-body h1,
     .mw-body h2 {
         font-family: sans-serif;
@@ -149,61 +134,61 @@
 	#list2 ol li p { padding:8px; font-style:normal; font-family:Arial; font-size:13px; color:rgba(0, 0, 0, 1); border-left: 1px dashed #999; text-align:justify; padding-right: 0; }
 	#list2 ol li p em { display:block; }
 
-    .list-header h2 { 
+    .list-header h2 {
         color:rgba(247, 230, 216, 1);
         font-weight:600;
         font-size:3rem;
-    } 
+    }
 
-	#indent{ 
+	#indent{
 		padding-left: 30px;
-		border-left: 1px dashed black; 
+		border-left: 1px dashed black;
 	}
     #indent p{
         margin-bottom: 5px;
     }
-	
+
 	.section-heading{
 		margin-top: 50px;
 		margin-bottom: 50px;
 		font-weight:600;
 	}
-	
-	.section-info{ 
+
+	.section-info{
 		/* margin-bottom: 130px; */
 	}
-	
-	
-	.section-info p{ 
+
+
+	.section-info p{
 		border-left: 2px dotted #ccc;
 		font-size: 13px;
 		padding-left: 10px;
 		/* margin-top:20px;  */
-		
+
 	}
-	
+
 	.section-info{
 		margin-bottom:30px;
-	}	
-	
+	}
+
 	.section-info:hover{
 		-webkit-transition: all .5s ease-in;
         transition: all 1s fadein;
 		border-left: 2px dashed #ccc;
 	}
-	
-	.section-info h4{ 
+
+	.section-info h4{
 		margin: auto 0px;
 	}
-	
-	.library{ 
-		background-color: #4db6ac;	
+
+	.library{
+		background-color: #4db6ac;
 	}
-	
+
 	.toolkit{
-		background-color: white;	
+		background-color: white;
 	}
-	
+
 	.employee-corner{
 		background-color: #ffb74d;
 	}
@@ -211,68 +196,68 @@
 
 
 	.quick-links { text-align:center;}
- 
-	.quick-links a{ 
-		margin-left:15px; 
-		margin-right: 15px; 
+
+	.quick-links a{
+		margin-left:15px;
+		margin-right: 15px;
 		padding-top: 5px;
-                 
+
 		border-top: 2px  solid black;
 		font-size: 2.4rem !important;
-		color: black; 
+		color: black;
 		margin-top: 15px;
 		font-weight: 600 !important;
 
-		display: inline-flex; 
+		display: inline-flex;
 		max-width: 150px;
-		text-align: left; 
-		line-height: 1.1; 
+		text-align: left;
+		line-height: 1.1;
 		margin-bottom: 10px;
 
 	    -webkit-transition: all .5s ease-in;
         transition: all .5s ease-in;
-	} 
+	}
 
-	.quick-links a:hover{ 
+	.quick-links a:hover{
 	    margin-right: 40px;
         margin-left: 40px;
-	    border-top: 2px dashed black; 
+	    border-top: 2px dashed black;
 	    -webkit-transition: all .3s ease-in;
         transition: all .3s ease-in;
         font-size: 2.7rem !important;
         max-width: 150px;
-		text-decoration: none; 
-	} 
+		text-decoration: none;
+	}
 
 
 	.quick-tiles a{
 		font-weight:600;
-		font-size: 1.5rem; 
+		font-size: 1.5rem;
 		text-decoration: none;
-		
+
 		color:rgba(82, 93, 120, 1);
 		background-color:rgba(238, 238, 238, 1);
-		
+
 		display:inline-block;
-		
+
 		padding:15px 20px;
 		margin-right: 10px;
 		margin-top:10px;
 		border-radius:10px;
 		box-shadow: 0px 4px 0px #888888;
 		border:1px solid #ccc;
-		
+
 		transition: all 0.5s;
 		cursor: pointer;
 	}
-	
+
 	.quick-tiles span{
 		cursor: pointer;
 		display: inline-block;
 		position: relative;
 		transition: 0.5s;
 	}
-	
+
 	.quick-tiles span:after {
 		content: '\00bb';
 		position: absolute;
@@ -281,7 +266,7 @@
 		right: -20px;
 		transition: 0.5s;
 	}
-	
+
 	.quick-tiles a:hover span {
 		padding-right: 25px;
 	}
@@ -290,12 +275,12 @@
 		opacity: 1;
 		right: 0;
 	}
-	
-	
+
+
 	.quick-tiles a:visited{
 		/*color: rgba(82, 93, 120, 1);*/
 	}
-	
+
     .logo {
         width: 120px;
         background-size: 100%;
@@ -308,7 +293,7 @@
         padding:0px;
         margin:5 !important;
     }
-    
+
     .logo-fr {
         height: 59px;
         width: 200px;
@@ -318,31 +303,25 @@
         background-repeat: no-repeat;
         background-position: 50% 30%;
     }
-    
-    .j1 {
-        background-image: url('https://d2r72yk5wmppdj.cloudfront.net/m/29a02a441b98bc6d/High-ethonomics-06.jpg');
-        background-size: cover;
-        color: white;
-        padding: 70px 0 50px;
-		/* padding-bottom: 70px; */
-        /* background-image: url('http://www.gcpedia.gc.ca/gcwiki/images/0/08/Cubicle_land_mkutev.jpg'); */
-       
-        background-position: right center;
-       
-        background-repeat: no-repeat;
-        height: 100%;
-        text-align: left;
-        margin-bottom: 0;
-        line-height: 1.7em;
 
-        -moz-transition: all .4s ease-in;
-	    -o-transition: all .4s ease-in;
-	    -webkit-transition: all .4s ease-in;
-	    transition: all .4s ease-in;
+	    .j1 {
+		    background-size: cover;
+		    color: white;
+		    padding: 70px 0 50px;
+		    background-position: right center;
+		    background-repeat: no-repeat;
+		    height: 100%;
+		    text-align: left;
+		    margin-bottom: 0;
+		    line-height: 1.7em;
+
+		    -moz-transition: all .4s ease-in;
+		  	-o-transition: all .4s ease-in;
+		  	-webkit-transition: all .4s ease-in;
+		  	transition: all .4s ease-in;
     }
 
     .j3{
-        /*background-image: url('https://d2r72yk5wmppdj.cloudfront.net/m/29a02a441b98bc6d/High-ethonomics-06.jpg');*/
         width: 100%;
         height: 100%;
         margin-bottom: 0px;
@@ -378,57 +357,50 @@
         margin: 0px 6%;
     }
 
-    .j1:hover{
-	/* background-color: #c62828;  */
-     }
-    
     .j1 h1,
     .j3 h1 {
-        margin-left: -0.5vw;
+        margin-left: -0.2vw;
         margin-top: -25px;
         margin-bottom: 0px;
         font-family: 'Roboto', sans-serif;
-        font-size: 10vw;
+        font-size: 7vh;
         font-weight: 600;
-        color:  rgba(0,0,0,0.95);
+        color: #000000;
         line-height: normal;
         letter-spacing: -1px;
 	}
 
     .j1 h1 span{
+				display: none;
         background-color: black;
         color: white;
         font-size: 2vw;
         font-weight: 600;
         padding: 0px 10px;
         margin-left: 10px;
-        text-decoration-style:  
-
+        text-decoration-style:
     }
 
-	.j1>.container>.row>.col-lg-6>p{
-		font-size: 18px;
-        font-weight: 400 !important;
-        color: black;
-	}
-    
+		.j1>.container>.row>.col-lg-6>p{
+			font-size: 18px;
+	        font-weight: 400 !important;
+	        color: black;
+		}
+
     .j2 {
         font-family: 'Roboto', sans-serif;
         background-color: #ccc;
         color: black;
         background-image: url('https://d2r72yk5wmppdj.cloudfront.net/m/23b0ccf327f25840/High-ethonomics-04.jpg');
         background-position: center;
-        background-position-y: center; 
+        background-position-y: center;
         background-size: cover;
         background-repeat: no-repeat;
         text-align: left;
-		margin: 0;
-        height: 400px;
-        padding: 250px 0 0px;
-
-        /*box-shadow: -1px -1px 0px 8px #a7a7a7;*/
+				margin: 0;
+        min-height: 65vh;
     }
-	
+
 	.j2 h2 {
         font-size: 1.8em;
         font-weight: 300;
@@ -444,20 +416,8 @@
 	   margin-bottom: 0px !important;
 	   line-height: 1.3 !important;
 	}
-    
-/*    .j3 {
-        font-family: 'Roboto', sans-serif;
-        background-color: #ccc;
-        color: #fff;
-        padding: 240px 0 80px;
-        background-image: url('http://www.gcpedia.gc.ca/gcwiki/images/5/53/Innofair-event.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        min-height: 20vh;
-        text-align: left;
-    }*/
-    
+
+
     .j4 {
         font-family: 'Roboto', sans-serif;
         background-color: #ccc;
@@ -470,128 +430,7 @@
         min-height: 20vh;
         text-align: left;
     }
-    
-  
-    
-    @media (max-width:767px) {
-        .j1 h1 {
-            font-size: 5rem;
-        }
 
-    }
-    
-    .navbar {
-        margin-bottom: 0;
-        position: fixed;
-        width: 100%;
-        border-radius: 0;
-        border: 0;
-        padding-bottom: 0;
-        z-index: 1000;
-        height: 59px;
-        
-    }
-    
-    .navbar-toggle {
-        position: relative;
-        float: right;
-        padding: 9px 10px;
-        margin-top: 12px;
-        margin-right: 15px;
-        margin-bottom: 8px;
-        background-color: transparent;
-        background-image: none;
-        border: 1px solid transparent;
-        border-radius: 4px;
-    }
-    
-    .navbar-default {
-        background: rgba(100, 149, 237,0.9);
-        border-color: transparent;
-    }
-    
-    .navbar-default .navbar-nav>li>a {
-        color: #000;
-        font-weight: 700;
-        font-size: 1.2em;
-        border-bottom: 6px solid transparent;
-        padding: 0;
-        margin: 2em 2em 0 0;
-        transition: all 0.2s ease-in;
-
-    }
-    
-    .navbar-default .navbar-nav>li>a:hover,
-    .navbar-default .navbar-nav>li>a:focus {
-        /* color: #262860; */
-        background-color: transparent;
-        border-bottom: 6px solid #6495ED;
-        font-size: 1.3em;
-        animation-play-state: paused;
-        transition: all 0.2s ease-out;
-    }
-    
-    @keyframes glowing{
-        0%{ font-size: 1.2em; color: #000; }
-        50%{ font-size: 1.5em; color: #6495ED; }
-        100%{ font-size: 1.2em; color: #000; }
-    }
-
-    .active-glowing{
-        animation: glowing 1000ms 3;
-    }
-
-    .navbar-default .navbar-nav>li.active>a,
-    .navbar-default .navbar-nav>li.active>a {
-        color: #262860;
-        background-color: transparent;
-        border-bottom: 6px solid #6495ED;
-    }
-    
-    .navbar-default .navbar-nav>.active>a,
-    .navbar-default .navbar-nav>.active>a:hover,
-    .navbar-default .navbar-nav>.active>a:focus {
-        color: #262860;
-        background-color: transparent;
-        border-bottom: 6px solid #262860;
-    }
-    
-    .navbar-default .navbar-brand {
-        color: #fff;
-        /* background-color: #262860; */
-        min-height: 58px;
-    }
-    
-    .navbar-default .navbar-brand:focus,
-    .navbar-default .navbar-brand:hover {
-        color: #f8f8f8;
-        /*background-color:#F7E6D8;*/*/
-    }
-    
-    .navbar-collapse.collapsing,
-    .navbar-collapse.collapse.in {
-        background-color: #fff;
-    }
-    
-    .dropdown-menu {
-        padding: 0;
-        border: 1px solid #f8f8f8;
-    }
-    
-    .dropdown-menu>li>a {
-        display: block;
-        padding: 15px 20px;
-        clear: both;
-        font-weight: 400;
-        line-height: 1.42857143;
-        color: #333;
-        white-space: nowrap;
-        border-bottom: 1px dotted #ccc;
-    }
-    /*ul.nav li.dropdown:hover ul.dropdown-menu {
-        display: block;
-    }*/
-    
     .mw-body h3,
     .mw-body h4,
     .mw-body h5,
@@ -602,23 +441,23 @@
         padding-bottom: .3em;
         padding-top: 0;
     }
-    
+
     a.tile-link:focus,
     a.tile-link:hover {
         text-decoration: none;
     }
-    
+
     .tile {
         color: #789;
-        padding: 0; 
+        padding: 0;
 		margin-top: 0px;
         margin-bottom: 30px;
-        
+
         height: 350px;
 
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-		border-radius: 5px;
-		border: 1px solid seashell;
+				border-radius: 5px;
+				border: 1px solid seashell;
 
         background-size: auto 100%;
         background-position: center;
@@ -629,10 +468,10 @@
 
     .tile2 {
         color: #789;
-        padding: 0; 
+        padding: 0;
         margin-top: 0px;
         margin-bottom: 30px;
-        
+
         height: 200px;
 
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
@@ -645,14 +484,14 @@
         -webkit-transition: all .2s ease-in;
         transition: all .2s ease-in;
     }
-    
+
     .tile img {
         -webkit-transition: all .2s ease-in;
         transition: all .2s ease-in;
 		display:block;
 		margin:auto;
     }
-    
+
     .tile:hover img {
         -webkit-filter: brightness(.7);
         filter: brightness(.7)
@@ -662,34 +501,33 @@
         -webkit-filter: brightness(.7);
         filter: brightness(.7)
     }
-    
-    
 
-    .tile h2 { 
-        font-size: 2.1em; 
+
+
+    .tile h2 {
+        font-size: 2.1em;
         /*padding: 10px;*/
         hyphens: auto;
         padding-bottom: 0px;
-        margin-bottom: 0px; 
+        margin-bottom: 0px;
         padding-top:20px;
 	}
 
     .tile2 h2{
-        font-size: 2.1em; 
+        font-size: 2.1em;
         /*padding: 10px;*/
         hyphens: auto;
         padding-bottom: 0px;
-        margin-bottom: 0px; 
+        margin-bottom: 0px;
         padding-top:20px;
     }
 
-    .tile2 h3 span{ 
+    .tile2 h3 span{
         background-color:#FFEE58;
         line-height: 1.13em;
         color: black;
 
     }
-
 
     .tile h2 i{
         font-weight: 400;
@@ -700,31 +538,31 @@
         padding: 0;
     }
 
-    .tile h2 span{ 
-        background-color:#FFEE58;
-        
+    .tile h2 span{
+        background-color:#e8a438;
         line-height: 1.13em;
-        color: black;
-
-    }  
+        color: white;
+				padding: 0 5px;
+    }
 
     .tile h3 span{
         background-color: #212121;
         font-size:0.945em;
         line-height: normal;
-        color: #FFEE58;
+        color: #e8a438;
+				padding: 0 5px;
 
-    } 
+    }
 
     .tools-page h1,
     .archive-page h1{
         color: black;
-        font-size: 4em; 
-        font-weight: 600; 
-        border-bottom: 1px dashed black; 
+        font-size: 4em;
+        font-weight: 600;
+        border-bottom: 1px dashed black;
         hyphens: auto;
 
-        margin: 20px 0px 30px; 
+        margin: 20px 0px 30px;
         padding-bottom: 5px;
     }
 
@@ -740,11 +578,11 @@
 
     .title{
         background-color:#BDBDBD;
-        border-radius: 5px; 
+        border-radius: 5px;
         border: 1px solid seashell;
 
     }
-    
+
     .title h5 {
 		margin: 0px;
 		text-align: center;
@@ -752,18 +590,18 @@
         color: black;
         font-weight: 600;
     }
-    
+
     a.tile-link:focus h5,
     a.tile-link:hover h5 {
         text-decoration: underline;
     }
-    
+
     .tile:hover {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
     }
-    
+
     .tile2:hover {
         -webkit-transform: translateY(-5px);
         transform: translateY(-5px);
@@ -778,7 +616,7 @@
         line-height: 18px;
 		font-weight: 300;
          /*fallback*/
-        /* height: 100px; */ 
+        /* height: 100px; */
         /* fallback */
         /*-webkit-line-clamp: 2;*/
         /* number of lines to show */
@@ -786,7 +624,7 @@
         margin-top: 20px;
         margin-left: 20px;
     }
-    
+
     .card-tradeshow h4 {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -800,45 +638,45 @@
         -webkit-box-orient: vertical;
     }
     /* to edit styles on GCPedia, go to: http://www.gcpedia.gc.ca/gcwiki/index.php?title=Template:Awesome-styles&action=edit */
-    
+
     .background-blue-1 {
         background-color: #525D78;
     }
-    
+
     .background-blue-2 {
         background-color: #A8C7DD;
     }
-    
+
 	.background-gray {
-    } 
-	
+    }
+
     .background-blue-main {
         background-color: #262860;
     }
-	
+
 	.background-purple {
 		background-color: #ce93d8;
 	}
-	
+
 	.background-teil {
 		background-color: #80cbc4;
 	}
-	
+
 	.background-yellow {
 		background-color: #ffcc80;
-	} 
-	
-	.background-red { 
+	}
+
+	.background-red {
 		background-color: #ef9a9a;
 	}
-	
+
 
     .btn{
         transition: all 0.2s ease-out;
-        background-color:#f2d459; 
-        color:black; 
-        font-weight: 600; 
-        margin-top: 30px; 
+        background-color:#f2d459;
+        color:black;
+        font-weight: 600;
+        margin-top: 30px;
         border-color: black;
     }
 
@@ -858,18 +696,18 @@
 
 	.quick-button a{
 		border-top: 2px dashed #424242;
-		
+
 		/* border-radius: 5px; */
 		display: inline-block;
 		text-align: left;
-		
+
 		width: 90%;
 		text-decoration: none;
 
 		/* min-height: 110px; */
 		/* box-shadow: 3px 3px 1px #9EC0E2; */
 	}
-	
+
 	.quick-button a :hover{
 		border-bottom: 2px dashed black;
 		text-decoration: none;
@@ -884,11 +722,11 @@
 		margin-top: 10px;
 		padding-bottom: 15px;
 		font-weight: 600;
-		
-		
+
+
 	}
-	
-    
+
+
     .home-tiles {
         /* margin-top: 30px;
 		margin-bottom:30px; */
@@ -897,18 +735,18 @@
 		/* background-color:#ef5350; */
     }
 
-    .home-tiles p{ 
+    .home-tiles p{
         padding: 0px 0px;
     }
 
 
-	
+
 	.home-tiles h2{
 		font-color: Black;
 		font-weight: 600;
 		margin-top:-5px;
 		/*font-size: 2vw;*/
-		
+
     }
 
     .home-tiles div-yellow{
@@ -916,7 +754,7 @@
     }
 
     .home-tiles div-green{
-        border-top: 3px dashed #43A047; 
+        border-top: 3px dashed #43A047;
     }
 
     .home-tiles div-blue{
@@ -926,6 +764,12 @@
     .yellow{
         color: #FDD835;
     }
+
+		.about-page .j2{
+			background-image: url('../img/workplace/ethonomics.jpg');
+			background-position: top;
+			background-size: cover;
+		}
 
     .about-page #big-h1{
         font-size: 4em;
@@ -944,97 +788,101 @@
         color:#6495ed;
     }
 
+		.contact-list{
+			margin-top: 40px;
+		}
+
     .contact-list b{
         color: #6495ed;
     }
 
 
-	.big-h1{ 
+	.big-h1{
 		font-size: 4em;
 		font-weight: 700;
 		margin-bottom: 10px;
 		padding: 0;
         display: inline-block;
-		line-height: 100%; 
+		line-height: 100%;
 		color: black;
         /*text-shadow: 1px 1px 0px #F44336, -1px -1px 0px #F44336;*/
 
-	} 
+	}
 
-	#big-h1 span{ 
+	#big-h1 span{
 		/*background-color: #FFEB3B;*/
-	} 
-	
-	.home-tiles img{ 
+	}
+
+	.home-tiles img{
 		width: 100%;
         height: 200px;
 		margin:0px;
 		padding: 0px;
 		border-radius: 5px;
-		margin-bottom: 10px; 
-	} 
-	
-	.vert-center{ 
+		margin-bottom: 10px;
+	}
+
+	.vert-center{
 		display:table;
-	} 
-    
+	}
+
     .background-green-1 {
         background-color: #83A983;
     }
 
-    .background-beige-1 { 
+    .background-beige-1 {
         background-color: #D4B9A4;
     }
-    
+
     .background-orange {
         background-color: #ffab91;
     }
-    
+
     .background-blue-3 {
         background-color: #2D32BE;
     }
-    
+
     .footer {
         height: auto;
-        background-color:  #FDD835;
+        background-color:  #e8a438;
         padding: 30px 0;
-		padding-bottom: 10px;
+				padding-bottom: 10px;
         /* color: #424242; */
-		-moz-transition: all .4s ease-in;
-		-o-transition: all .4s ease-in;
-		-webkit-transition: all .4s ease-in;
-		transition: all .4s ease-in;
+				-moz-transition: all .4s ease-in;
+				-o-transition: all .4s ease-in;
+				-webkit-transition: all .4s ease-in;
+				transition: all .4s ease-in;
     }
 
 
     .footer hr {
         margin: 40px auto;
     }
-    
+
     .footer a {
         color: #1C2029;
         font-weight:400;
 		font-size: 15px;
 	}
-	
-    
+
+
     .tradeshow-tiles {}
-    
+
     .tradeshow-tiles .intro-text {
         font-size: 18px;
     }
-    
+
     .tradeshow-tiles h2 {
         color: #262860;
         font-weight: 600;
         font-size: 5rem;
         margin: 30px auto;
     }
-    
+
     .card-tradeshow {
         margin: 20px auto;
     }
-    
+
     .card-tradeshow img {
         -o-object-fit: cover;
         object-fit: cover;
@@ -1044,19 +892,19 @@
         -webkit-transition: all .2s ease;
         transition: all .2s ease;
     }
-    
+
     .card-tradeshow img:hover {
         -webkit-transform: translateY(-7px);
         transform: translateY(-7px);
     }
-	
- 	#full-wide{ 
-		width: 85%;
-	}  
 
-    .about-page #full-wide{ 
+ 	#full-wide{
+		width: 85%;
+	}
+
+    .about-page #full-wide{
 		width: 70%;
-	}  
+	}
 
     @media (max-width: 1300px) {
         .about-page #full-wide{
@@ -1064,137 +912,137 @@
         }
     }
 
-    .home-page #full-wide{ 
-		width: 75%;
-	}  
 
-    .home-page .super-body{
-        background-image: url('https://d2r72yk5wmppdj.cloudfront.net/m/29a02a441b98bc6d/High-ethonomics-06.jpg');
+    .super-body .home-page{
         overflow-y: hidden;
-        background-size: cover;
-        background-repeat: no-repeat;
+				background-image: url('../img/workplace/ethonomics4.jpg');
+				background-position: center right;
+				background-size: cover;
+				background-repeat: no-repeat;
+				overflow: hidden;
     }
 
-    .home-page .project-bio{
-        border: 1px solid gray;
-        font-size:25px; 
-        font-weight: 400;
-        line-height: 27px;
-        color: black; 
-        vertical-align: center; 
-        display: block;
-        border-radius: 8px;
-        /*margin-right: 10vw;*/
-        /*margin-right: 20vw;*/
-        margin-top: 20px;
-        padding: 20px;
+		.home-page .j1{
+			background: none;
+			padding: 3vw;
+			position: fixed;
+			height: auto;
+			bottom: 0;
+
+		}
+
+		.home-page h1 {
+			margin-top: 1vh;
+		}
+
+		.home-page .j1 .home-box {
+			padding: 10vh;
+			width: 50vw;
+			background-color: rgba(178,192,193, 1);
+			/* border: 1px solid gray; */
+			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+			padding: 50px 4vw;
+		}
+
+		@media screen and (max-width: 1500px) {
+			.home-page .j1 .home-box {
+				width: auto;
+			}
+		}
 
 
-        background-color: #f2d459; 
-        /*box-shadow: 0px 0px 0px 1px #333;   */
-        /*border-radius: 15px;*/
-    }
-f
-    .home-page table{
-        width: 100%;
-        padding: 20px;
-    }
-    .home-page table td{
-        /*border: 1px solid black;*/
-        padding:50px;
-    }
+		.home-page .ghetto-nav {
+			display: flex;
+			flex-direction: row;
+			margin-top: 7vh;
+			padding-left: 10px;
+			border-left: 4px solid  #e8a438;
+		}
 
-    .home-page table #table-button{
-        font-size: 5em;
-        text-align: left;
-        font-weight: bold;
-        background-color: rgba(217, 162, 79, 0.56);
-        padding: 0px;
-        line-height: 100%;
-    }
+		.home-page .ghetto-nav a{
+			color: #000;
+			font-size: 1.3em;
+			font-weight: bold;
+			padding: 0 1em 0 0;
+			transition: all 0.15s ease-in;
+		}
 
-    .home-page table #td1{
-        background-color:rgb(227, 235, 248);
-        width: 70%;
-        background-color: rgba(100, 149, 237, 0.15);
-        padding: 30px;
-    }
+		.home-page p {
+			color: #000;
+			font-weight: normal;
+			margin: 0.5em 0;
+			font-size: 1.2em;
+		}
 
-    .home-page table #td2{
-        /*text-align: justify;*/
-        width: 30%;
-        background-color: rgba(100, 149, 237, 0.3);
-        padding: 20px 0px 0px 40px;
-    }
-    .home-page table #table-button a:hover{
-        text-decoration: none;
-        color: black;
-    }
+		.home-page .ghetto-nav a:visited{
+			color: #000;
+		}
 
-    .home-page button:hover{
-        -webkit-transform: translateY(-5px);
-        transform: translateY(-5px);
-        box-shadow: 0 3px 9px rgba(0, 0, 0, 0.7);
-        transition: all .3s ease-in;
-    }
+		.home-page .ghetto-nav a:hover{
+			text-decoration: none;
+			font-size: 1.5em;
+			transition: all 0.15s ease-out;
+			color: #e89715;
+		}
 
-    .home-page button:after{
-        transition: all .3s ease-out;
-    }
+		.locations-page .j2{
+			background-image: url("../img/workplace/ethonomics0.jpg");
+			background-position-y: top;
+		}
 
-    .locations-page .home-tiles h4{ 
-        margin-left: 0px;
+    .locations-page .home-tiles h4{
+        margin-left: 0;
         margin-top: 30px;
+				font-size: 1.4em;
+				font-weight: 400;
     }
 
-    .training-page .footer{
-
-    }
+		.fa-map-marker {
+			margin-right: 0.3em;
+		}
 
     .help-page h2{
         margin-top: 70px;
     }
-    
-    .container#elgin,
-    .container#sparks,
-    #regions,
-    #fedtalks,
-    #workshops,
-    #health,
-    #recruitment,
-    #living,
-    #blueprinttv,
-    #arrival,
-    #mainstage,
-    #presentations {
-        padding-top: 60px;
-        margin-top: -60px;
-    }
-    
+
+		.help-page .j2{
+			background-image: url("../img/workplace/ethonomics3.jpg");
+			background-position-y: top;
+		}
+
+		.training-page .j2{
+			background-image: url("../img/workplace/ethonomics6.jpg");
+			background-position-y: top;
+		}
+
+		.tools-page .j2{
+			background-position-y: top;
+		}
+
     .programme h2 {
         color: #262860;
         font-weight: 600;
         font-size: 5rem;
         margin: 30px auto 0;
     }
-    
+
     .programme .location-box h4 {
         color: #262860;
     }
-    
+
     .programme h3 {
         color: #F5A623;
     }
-    
+
     .programme p {
         margin: 15px auto 30px;
     }
-    
+
     .programme hr {
     .programme hr {
         margin-top: 60px;
     }
-    
+
     .location-box {
         display: inline-block;
         padding: 3px 12px;
@@ -1219,29 +1067,29 @@ f
 
 	.tg .tg-b7b8{background-color:rgba(0, 0, 0, 0);vertical-align:top;color:#fff}
 
-	@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px    
+	@media screen and (max-width: 767px) {.tg {width: auto !important;}.tg col {width: auto !important;}.tg-wrap {overflow-x: auto;-webkit-overflow-scrolling: touch;margin: auto 0px
 
 
     table {
         color: #262860;
         background-color: #F0EDED;
     }
-    
+
     table tr:first-child {
         background-color: #262860;
         color: #fff;
         font-weight: 600;
     }
-    
+
     table td:first-child {
         font-weight: 600;
         max-width: 420px;
     }
-    
+
     table tr h6 {
         color: #3d41a5;
     }
-    
+
     table tr h5 {
         font-weight: 400;
         color: #222;
@@ -1256,7 +1104,7 @@ f
         /* number of lines to show */
         -webkit-box-orient: vertical;
     }
-    
+
     .text-full {
         overflow: visible;
         max-height: none;
