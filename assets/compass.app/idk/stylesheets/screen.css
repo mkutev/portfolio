@@ -1,0 +1,386 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../lib/ruby/compass_1.0/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 10, ../sass/screen.scss */
+.portfolio-experiment {
+  background: #00ffa5;
+  color: #203e86;
+}
+/* line 15, ../sass/screen.scss */
+.portfolio-experiment .experiment-title {
+  outline: none;
+  font-size: 10vw;
+  text-align: center;
+  font-family: "Roboto", monospace;
+  min-height: 10vw;
+  max-width: 80vw;
+  min-width: 10vw;
+}
+/* line 24, ../sass/screen.scss */
+.portfolio-experiment .experiment-title,
+.portfolio-experiment .experiment-title * {
+  animation: cray 6s infinite steps(50);
+  display: inline-block;
+}
+@keyframes cray {
+  2% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  4% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  6% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  8% {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  10% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  12% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  14% {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  16% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  18% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  20% {
+    font-weight: 500;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  22% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  24% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  26% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: none;
+  }
+  28% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: capitalize;
+  }
+  30% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  32% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  34% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  36% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  38% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  40% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  42% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
+  44% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  46% {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  48% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  50% {
+    font-weight: 600;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  52% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: uppercase;
+  }
+  54% {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  56% {
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  58% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: line-through;
+    text-transform: lowercase;
+  }
+  60% {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  62% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  64% {
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: none;
+  }
+  66% {
+    font-weight: 200;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  68% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: capitalize;
+  }
+  70% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  72% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  74% {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  76% {
+    font-weight: 100;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  78% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  80% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: lowercase;
+  }
+  82% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  84% {
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  86% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: none;
+  }
+  88% {
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  90% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  92% {
+    font-weight: 100;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+  }
+  94% {
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  96% {
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+  }
+  98% {
+    font-weight: 300;
+    font-style: normal;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+}

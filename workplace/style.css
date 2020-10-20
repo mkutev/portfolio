@@ -766,7 +766,7 @@
     }
 
 		.about-page .j2{
-			background-image: url('../img/workplace/ethonomics.jpg');
+			background-image: url('../images/workplace/ethonomics.jpg');
 			background-position: top;
 			background-size: cover;
 		}
@@ -915,7 +915,7 @@
 
     .super-body .home-page{
         overflow-y: hidden;
-				background-image: url('../img/workplace/ethonomics4.jpg');
+				background-image: url('../images/workplace/ethonomics4.jpg');
 				background-position: center right;
 				background-size: cover;
 				background-repeat: no-repeat;
@@ -939,9 +939,10 @@
 			padding: 10vh;
 			width: 50vw;
 			background-color: rgba(178,192,193, 1);
-			/* border: 1px solid gray; */
-			box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
+			box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.3);
 			padding: 50px 4vw;
+			border: 2px solid rgb(163, 178, 185);
+			border-radius: 10px;
 		}
 
 		@media screen and (max-width: 1500px) {
@@ -986,7 +987,7 @@
 		}
 
 		.locations-page .j2{
-			background-image: url("../img/workplace/ethonomics0.jpg");
+			background-image: url("../images/workplace/ethonomics0.jpg");
 			background-position-y: top;
 		}
 
@@ -1006,12 +1007,12 @@
     }
 
 		.help-page .j2{
-			background-image: url("../img/workplace/ethonomics3.jpg");
+			background-image: url("../images/workplace/ethonomics3.jpg");
 			background-position-y: top;
 		}
 
 		.training-page .j2{
-			background-image: url("../img/workplace/ethonomics6.jpg");
+			background-image: url("../images/workplace/ethonomics6.jpg");
 			background-position-y: top;
 		}
 
